@@ -69,31 +69,39 @@
     }
 
     .projects {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
 
     .project {
-      background: #334155;
-      padding: 15px;
-      border-radius: 12px;
-    }
-
+  background: #334155;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+.project:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
     .project h3 {
       color: #f8fafc;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background: #38bdf8;
-      color: #0f172a;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+  display: inline-block;
+  margin-top: auto;
+  padding: 8px 15px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
     footer {
       text-align: center;
@@ -152,9 +160,7 @@
 
   <div class="project">
     <h3>Sistema de Reservas</h3>
-    <p>Projeto de desenvolvimento de um sistema web para gerenciamento de reservas de salas de estudo privativas.
-      A solução tem como objetivo automatizar o controle de agendamentos, 
-      disponibilidade e cálculo de valores, trazendo mais organização, eficiência e transparência para os usuários.</p>
+    <p>Sistema web para gerenciamento de reservas de salas, com foco na organização de agendamentos e cálculo automático de valores.</p>
      <a href="projeto-reservas.html" class="btn"> Ver projeto</a>
   </div>
 
