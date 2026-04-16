@@ -2,54 +2,174 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio - Ana Luiza Amaro Gomes Silva</title>
+  <title>Ana Luiza Amaro Gomes Silva| Portfólio</title>
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: Arial;
-      margin: 40px;
-      background-color: #f4f4f4;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
     }
-    h1 {
-      color: #333;
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
     }
-    .box {
-      background: white;
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
       padding: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 16px;
       margin-bottom: 20px;
-      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .project {
+      background: #334155;
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    .project h3 {
+      color: #f8fafc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Oi, eu sou Ana 👋</h1>
+<header>
+  <h1>Oie, eu sou Ana 👋</h1>
+  <p>Estudante de Sistemas de Informação | Tecnologia • UX/UI • Soluções Digitais</p>
+</header>
 
-  <div class="box">
+<div class="container">
+
+  <div class="card">
     <h2>Sobre mim</h2>
-    <p>Sou estudante de Sistemas de Informação, com interesse em tecnologia, organização de processos e desenvolvimento de soluções digitais. Também tenho afinidade com design, especialmente na área de UX/UI, buscando criar experiências intuitivas e funcionais para o usuário.</p>
+    <p>
+      Sou estudante de Sistemas de Informação, com foco em desenvolvimento de soluções digitais e organização de processos.
+      Tenho interesse em UX/UI Design, buscando unir tecnologia e experiência do usuário para criar soluções intuitivas,
+      eficientes e centradas nas pessoas.
+    </p>
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Habilidades</h2>
     <ul>
-      <li>Kotlin / Android</li>
-      <li>Banco de Dados</li>
-      <li>Análise de Requisitos</li>
-      <li>Organização e Comunicação</li>
+      <li>💻 Kotlin / Android</li>
+      <li>📊 Banco de Dados</li>
+      <li>📌 Análise de Requisitos</li>
+      <li>🎨 UX/UI Design</li>
+      <li>🧠 Organização e Comunicação</li>
     </ul>
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Projetos</h2>
-    <p><strong>App Lista de Tarefas</strong><br>
-    Aplicativo desenvolvido em Kotlin utilizando RecyclerView.</p>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>App Lista de Tarefas</h3>
+        <p>Aplicativo mobile desenvolvido em Kotlin com foco em organização e produtividade do usuário.</p>
+        <a href="#" class="btn">Ver projeto</a>
+      </div>
+
+      <div class="project">
+        <h3>Projetos Acadêmicos</h3>
+        <p>Modelagem de sistemas, diagramas UML e levantamento de requisitos.</p>
+        <a href="#" class="btn">Ver detalhes</a>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Contato</h2>
-    <p>Email: seuemail@email.com</p>
+    <p>Email: suzianaamaro17@gmail.com</p>
+    <p>LinkedIn: www.linkedin.com/in/ana-luiza-amaro-153310262</p>
   </div>
+
+</div>
+
+<footer>
+  <p>© 2026 - Ana Amaro</p>
+</footer>
 
 </body>
 </html>
