@@ -2,256 +2,252 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Ana Luiza Amaro Gomes Silva| Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Luiza Amaro | Portfólio</title>
 
-  <!-- Fonte moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
 
     body {
-      background: #0f172a;
+      background: #050505;
       color: #e2e8f0;
-      line-height: 1.6;
     }
 
-    header {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-}
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(5,5,5,0.8);
+      backdrop-filter: blur(10px);
+    }
 
-    header h1 {
-      font-size: 2.5rem;
+    nav h1 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #94a3b8;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
       color: #38bdf8;
     }
 
-    header p {
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 60px;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      max-width: 700px;
+      line-height: 1.2;
+    }
+
+    .highlight {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      color: #94a3b8;
+      max-width: 500px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid #38bdf8;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #38bdf8;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #000;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 100px 60px;
+    }
+
+    h3 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #38bdf8;
+    }
+
+    /* PROJETOS */
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .project {
+      border: 1px solid #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      border-color: #38bdf8;
+      transform: translateY(-5px);
+    }
+
+    .project h4 {
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .project a {
+      display: inline-block;
       margin-top: 10px;
-      font-size: 1.1rem;
+      font-size: 14px;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      border: 1px solid #1e293b;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
       color: #94a3b8;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .card {
-  background: rgba(30, 41, 59, 0.8);
-  padding: 25px;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid #334155;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px) scale(1.01);
-}
-
-   h2 {
-  margin-bottom: 10px;
-  color: #38bdf8;
-  border-bottom: 1px solid #334155;
-  padding-bottom: 5px;
-}
-
-    ul {
-      list-style: none;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: stretch;
-}
-
-.project {
-  background: #334155; 
-  padding: 25px; 
-  border-radius: 12px;
-  border: 1px solid #475569;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 180px;
-  transition: 0.3s;
-}
-
-.project:hover {
-  background: #3b4a5f;
-  border: 1px solid #38bdf8;
-  transform: translateY(-5px);
-}
-    .project h3 {
-      color: #f8fafc;
-      margin-bottom: 10px;
-    }
-    .project p {
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
-   .btn {
-  display: inline-block;
-  margin-top: auto;
-  padding: 10px 18px;
-  background: #38bdf8;
-  color: #020617;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  box-shadow: 0 0 15px #38bdf8;
-  transform: scale(1.05);
-}
+    /* FOOTER */
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 40px;
       color: #64748b;
     }
 
-    @media (max-width: 768px) {
+    @media(max-width: 768px) {
       .projects {
         grid-template-columns: 1fr;
       }
-    }
-    a {
-  color: #38bdf8;
-  text-decoration: none;
-}
 
-a:hover {
-  color: #7dd3fc;
-  text-decoration: underline;
-}
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      nav {
+        padding: 20px;
+      }
+
+      .section {
+        padding: 80px 20px;
+      }
+
+      .hero {
+        padding: 0 20px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>👩‍💻 Ana Luiza Amaro</h1>
-  <p>Estudante de Sistemas de Informação | Tecnologia • UX/UI • Soluções Digitais</p>
-</header>
-
-<div class="container">
-
-  <div class="card">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou estudante de Sistemas de Informação, com foco no desenvolvimento de soluções digitais, 
-      análise de requisitos e organização de processos. Tenho interesse em atuar com tecnologia de forma abrangente, 
-      envolvendo desenvolvimento, modelagem de sistemas e experiência do usuário, incluindo também a criação de interfaces (UX/UI), 
-      buscando sempre soluções eficientes, estruturadas e orientadas às necessidades do negócio.
-    </p>
+<!-- NAV -->
+<nav>
+  <h1>Ana Luiza Amaro</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="#projetos">Projetos</a>
+    <a href="certificados.html">Certificados</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
   </div>
+</nav>
 
-  <div class="card">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>📊 Banco de Dados</li>
-      <li>📌 Análise de Requisitos</li>
-      <li>🎨 UX/UI Design</li>
-      <li>🧠 Organização e Comunicação</li>
-    </ul>
+<!-- HERO -->
+<section class="hero">
+  <h2>
+    Estudante de Sistemas de Informação focada em 
+    <span class="highlight">dados, sistemas e soluções digitais</span>.
+  </h2>
+
+  <p>
+    Desenvolvendo projetos acadêmicos voltados à análise de dados, organização de processos e experiência do usuário.
+  </p>
+
+  </section>
+
+<section id="projetos" class="section">
+  <h3>Projetos</h3>  <div class="projects">
+
+    <div class="project">
+      <h4>MANA’s Lanche</h4>
+      <p>Projeto acadêmico voltado à organização de pedidos e melhoria do fluxo de atendimento.</p>
+      <a href="projeto-manas.html">Ver projeto →</a>
+    </div>
+
+    <div class="project">
+      <h4>Sistema de Reservas</h4>
+      <p>Controle de agendamentos com lógica de dados para organização e automação.</p>
+      <a href="projeto-reservas.html">Ver projeto →</a>
+    </div>
+
+    <div class="project">
+      <h4>Padaria Pão Fresquim</h4>
+      <p>Organização de produtos e pedidos com foco em estruturação de dados.</p>
+      <a href="projeto-padaria.html">Ver projeto →</a>
+    </div>
+
   </div>
-  
-<div class="card">
-  <h2>Cursos e Certificações</h2>
-  <ul>
-    <li>📚 Tecnico em Redes de Computadores - IFTM - Uberlândia Centro
-      👉 <a href="https://drive.google.com/file/d/1CBWc9e1Wp-yrujGxyMts2RLqwwrIVrt_/view?usp=sharing" target="_blank">
-   CERTIFICADO </a> </li> 
-    <li>📚 Ferramentas da Comunicação - Universidade Pitágoras Unopar Anhanguera (40H) 
-      👉 <a href="https://drive.google.com/file/d/1ZFyS_aTgdJ6SNcGKE_8jcWZPqaxPipzb/view?usp=sharing" target="_blank">
-   CERTIFICADO </a> </li> 
-    <li>📚 Gestão de Pessoas – SENAT (20h) 
-      👉 <a href="https://drive.google.com/file/d/1WXu0JoTNsDGTe45pL7ySv8VBS_r0Owr0/view?usp=sharing" target="_blank">
-   CERTIFICADO </a> </li>
-    <li>📚 Desenvolvimento Humano em Gestão de Projetos – Universidade Pitágoras Unopar Anhanguera (80h) 
-      👉 <a href="https://drive.google.com/file/d/11uYLiizcpiYUZTJxQ86wTQ7VtHwDYTp-/view?usp=sharing" target="_blank">
-   CERTIFICADO </a> </li>
-    <li>📚 Liderança e Gestão por Competências – Instituto Federal de Minas Gerais (20h) 
-      👉 <a href="https://drive.google.com/file/d/1nxnifS_qMfK2ZXAuhM-KHKJTVepmCF5A/view?usp=sharing" target="_blank">
-   CERTIFICADO </a> </li>
-    <li>📚 Contabilidade Básica – Instituto Expansão (22h) 
-      👉 <a href="https://drive.google.com/file/d/1PxIAeY7wPqkMJrk2qBlk4lZeTO2oihPq/view?usp=sharing" target="_blank">
-   CERTIFICADO </a> </li>
-  </ul>
+</section>
+<!-- HABILIDADES -->
+<section class="section">
+  <h3>Habilidades</h3>
 
-  <h3 style="margin-top:15px; color:#94a3b8;">Em andamento</h3>
-  <ul>
-    
-    <li>📖 Redação Digital: UX Writing, Copywriting e Web Writing – Universidade Pitágoras Unopar Anhanguera</li>
-  </ul>
-</div>
-  
-  <div class="card">
-    <h2>Projetos</h2>
-
-   <div class="projects">
-
-  <div class="project">
-  <h3>Sistema MANA’s Lanche</h3>
-  <p>Solução desenvolvida em low-code para gerenciamento de pedidos, com foco em organização, agilidade e experiência do usuário.</p>
-  <a href="projeto-manas.html" class="btn">
-  Ver projeto
-</a>
-</div>
-
-  <div class="project">
-    <h3>Sistema de Reservas</h3>
-    <p>Sistema web para gerenciamento de reservas de salas, com foco na organização de agendamentos e cálculo automático de valores.</p>
-     <a href="projeto-reservas.html" class="btn"> Ver projeto</a>
+  <div class="skills">
+    <div class="skill">Banco de Dados</div>
+    <div class="skill">Análise de Dados</div>
+    <div class="skill">Requisitos</div>
+    <div class="skill">UX/UI</div>
+    <div class="skill">Processos</div>
   </div>
-
-  <div class="project">
-  <h3>Sistema de Gestão - Padaria Pão Fresquim</h3>
-  <p>Sistema desenvolvido para organização de pedidos e gestão de produtos em uma padaria.</p>
-  <a href="projeto-padaria.html" class="btn">Ver projeto</a>
-</div>
-
-</div>
-    
-  </div>
-
-  <div class="card">
-    <h2>Contato</h2>
-   <p>
-  📧 <a href="mailto:suzianaamaro17@gmail.com">
-    suzianaamaro17@gmail.com
-  </a>
-</p>
-
-<p>
-  💼 <a href="https://www.linkedin.com/in/ana-luiza-amaro-153310262" target="_blank">
-    LinkedIn
-  </a>
-</p>
-  </div>
-
-</div>
+</section>
 
 <footer>
-  <p>© 2026 - Ana Luiza Amaro</p>
+  © 2026 Ana Luiza
 </footer>
 
 </body>
