@@ -1,79 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Projeto MANA's Lanche</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MANA's Lanche</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      background: #0f172a;
-      color: #e2e8f0;
-      padding: 40px;
-    }
-
-    h1 {
-      color: #38bdf8;
-    }
-
-    .box {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn-voltar {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 15px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-  </style>
+body {
+  background: #050505;
+  color: #e2e8f0;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.box {
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 8px 15px;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #38bdf8;
+  color: #000;
+}
+
+iframe {
+  margin-top: 15px;
+  border-radius: 10px;
+}
+</style>
 </head>
+
 <body>
-<a href="index.html" class="btn-voltar">← Voltar ao portfólio</a>
 
-  <h1>Sistema MANA’s Lanche 🍔</h1>
+<a href="index.html" class="btn-voltar">← Voltar</a>
 
-  <div class="box">
-    <h2>Sobre o projeto</h2>
-    <p>
-      Sistema desenvolvido para otimizar o gerenciamento de pedidos de uma lanchonete,
-      tornando o processo mais rápido, organizado e digital.
-     <h2> Objetivo</h2>
-      Desenvolver um sistema (LowCode) de gerenciamento de pedidos para a lanchonete MANA’s Lanche,
-      que permita registrar pedidos de forma eficiente, 
-      armazenar informações de pedidos e produtos. 
+<h1>Sistema MANA’s Lanche 🍔</h1>
 
-    </p>
-  </div>
+<div class="box">
+  <h2>Contexto</h2>
+  <p>
+    Projeto acadêmico desenvolvido com o objetivo de simular a digitalização de um pequeno negócio do setor alimentício.
+  </p>
+</div>
 
-  <div class="box">
-    <h2>Metodologia</h2>
-    O desenvolvimento será dividido em etapas semanais, 
-    seguindo o cronograma acima. Serão utilizadas ferramentas definidas pela equipe para controle de tarefas, 
-    documentação e versionamento do código. Cada fase terá entregas parciais para garantir o progresso contínuo e o alinhamento com os requisitos do cliente. 
+<div class="box">
+  <h2>Problema</h2>
+  <p>
+    O controle de pedidos era feito de forma manual, gerando desorganização, atrasos no atendimento e maior probabilidade de erros operacionais.
+  </p>
+</div>
 
-    <h2>Funcionalidades</h2>
-    <ul>
-      <li>Cadastro de produtos</li>
-      <li>Registro de pedidos</li>
-      <li>Interface intuitiva</li>
-    </ul>
-  </div>
+<div class="box">
+  <h2>Solução</h2>
+  <p>
+    Foi desenvolvido um sistema utilizando low-code para centralizar os pedidos, organizar as informações e melhorar o fluxo de atendimento, com foco na estruturação de dados e facilidade de uso.
+  </p>
+</div>
 
- <div class="box">
+<div class="box">
+  <h2>Resultados</h2>
+  <ul>
+    <li>Melhor organização dos pedidos</li>
+    <li>Redução de erros operacionais</li>
+    <li>Maior agilidade no atendimento</li>
+  </ul>
+</div>
+
+<div class="box">
+  <h2>Funcionalidades</h2>
+  <ul>
+    <li>Cadastro de produtos</li>
+    <li>Registro de pedidos</li>
+    <li>Interface intuitiva</li>
+  </ul>
+</div>
+
+<div class="box">
   <h2>Visualização do Projeto</h2>
 
   <p>
@@ -82,9 +132,9 @@
     </a>
   </p>
 
-  <h3>Protótipo (UX/UI)</h3>
-    <iframe 
-    style="border: none;" 
+  <h3 style="margin-top:20px;">Protótipo (UX/UI)</h3>
+
+  <iframe 
     width="100%" 
     height="500" 
     src="https://embed.figma.com/design/Wadt1246ykT4J8mGBmS0R0/MANA-s-Lanche?node-id=0-1&embed-host=share">
