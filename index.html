@@ -180,6 +180,35 @@
         padding: 0 20px;
       }
     }
+.skills-group {
+  margin-top: 20px;
+}
+
+.skills-title {
+  margin: 20px 0 10px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+  font-size: 13px;
+  color: #e2e8f0;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
   </style>
 </head>
 
@@ -237,12 +266,21 @@
 <section class="section">
   <h3>Habilidades</h3>
 
-  <div class="skills">
-    <div class="skill">Banco de Dados</div>
-    <div class="skill">Análise de Dados</div>
-    <div class="skill">Requisitos</div>
-    <div class="skill">UX/UI</div>
-    <div class="skill">Processos</div>
+  <div class="skills-group">
+
+    <p class="skills-title">Técnicas</p>
+    <div class="skills">
+      <span class="skill">Banco de Dados</span>
+      <span class="skill">Análise de Dados</span>
+      <span class="skill">Levantamento de Requisitos</span>
+    </div>
+
+    <p class="skills-title">Complementares</p>
+    <div class="skills">
+      <span class="skill">UX/UI</span>
+      <span class="skill">Organização de Processos</span>
+    </div>
+
   </div>
 </section>
 
