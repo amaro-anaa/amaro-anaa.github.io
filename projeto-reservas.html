@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Sistema de Reservas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Reservas</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      background: #0f172a;
-      color: #e2e8f0;
-      padding: 40px;
-    }
-
-    .box {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    h1, h2 {
-      color: #38bdf8;
-    }
-
-    a {
-      color: #38bdf8;
-    }
-    .btn-voltar {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 15px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
-  </style>
+
+body {
+  background: #050505;
+  color: #e2e8f0;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.box {
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  color: #e2e8f0;
+  margin-bottom: 6px;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 8px 15px;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #38bdf8;
+  color: #000;
+}
+</style>
 </head>
 
 <body>
-<a href="index.html" class="btn-voltar">← Voltar ao portfólio</a>
-<h1>📚 Sistema de Reservas de Sala</h1>
+
+<a href="index.html" class="btn-voltar">← Voltar</a>
+
+<h1>Sistema de Reservas de Sala 📚</h1>
 
 <div class="box">
-  <h2>Sobre o projeto</h2>
+  <h2>Contexto</h2>
   <p>
-   Desenvolvimento de um sistema web voltado para o gerenciamento de reservas de salas de estudo, 
-  com foco na automação de processos e melhoria da experiência do usuário. 
-  O projeto envolve análise de requisitos, definição de regras de negócio e modelagem do sistema,
-  visando reduzir erros operacionais e otimizar o controle de reservas.
+    Projeto acadêmico desenvolvido para simular o gerenciamento de reservas de salas de estudo, com foco na organização de horários e controle de uso dos espaços.
   </p>
+</div>
+
+<div class="box">
+  <h2>Problema</h2>
+  <p>
+    A gestão manual de reservas pode gerar conflitos de horários, falta de controle e dificuldade no cálculo de valores e penalidades, impactando a organização do sistema.
+  </p>
+</div>
+
+<div class="box">
+  <h2>Solução</h2>
+  <p>
+    Foi desenvolvido um sistema web para automatizar o processo de reservas, organizando os horários disponíveis, aplicando regras de negócio e facilitando o controle das informações.
+  </p>
+</div>
+
+<div class="box">
+  <h2>Resultados</h2>
+  <ul>
+    <li>Organização dos horários de reserva</li>
+    <li>Redução de conflitos e erros</li>
+    <li>Automação de cálculos e regras</li>
+  </ul>
 </div>
 
 <div class="box">
@@ -64,11 +116,11 @@
 </div>
 
 <div class="box">
-  <h2>Regras de negócio</h2>
+  <h2>Regras de Negócio</h2>
   <ul>
-    <li>R$20,00 por hora</li>
-    <li>R$2,00 a cada 5 minutos de atraso</li>
-    <li>Pagamento presencial</li>
+    <li>Valor de R$20,00 por hora</li>
+    <li>Multa de R$2,00 a cada 5 minutos de atraso</li>
+    <li>Pagamento realizado presencialmente</li>
   </ul>
 </div>
 
